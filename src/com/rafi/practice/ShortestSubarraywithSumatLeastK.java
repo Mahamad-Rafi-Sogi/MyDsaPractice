@@ -20,21 +20,21 @@ public class ShortestSubarraywithSumatLeastK {
         int start = 0;
 
         for (int end = 0; end < n; end++) {
-            // Expand the window by adding nums[end]
+
             currentSum += nums[end];
 
-            // Shrink the window while currentSum is greater than or equal to K
+
             while (currentSum >= K) {
-                // Update the minimum length
+
                 minLength = Math.min(minLength, end - start + 1);
 
-                // Shrink the window
+
                 currentSum -= nums[start];
                 start++;
             }
         }
 
-        // Return -1 if no valid subarray is found
+
         return minLength == Integer.MAX_VALUE ? -1 : minLength;
     }
 
