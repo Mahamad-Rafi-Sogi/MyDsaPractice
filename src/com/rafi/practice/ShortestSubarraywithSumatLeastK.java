@@ -39,3 +39,16 @@ public class ShortestSubarraywithSumatLeastK {
     }
 
 }
+
+/*
+Approach: Sliding Window (Two Pointers)
+
+	1.	Time Complexity:  O(n) 
+	•	The end pointer iterates through the array exactly once.
+	•	The start pointer may iterate through the array, but it only moves forward (in total, both pointers make  n  moves).
+	•	Overall, the time complexity is linear,  O(n) .
+	
+	2.	Space Complexity:  O(1) 
+	•	No extra data structures are used; only a few integer variables (currentSum, start, etc.).
+
+*/
