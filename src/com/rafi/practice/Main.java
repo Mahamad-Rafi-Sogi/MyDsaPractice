@@ -1,8 +1,7 @@
 package com.rafi.practice;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import java.util.Arrays;
 
 class Main {
     public static void main(String[] args) {
