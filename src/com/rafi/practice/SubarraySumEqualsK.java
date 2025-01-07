@@ -40,3 +40,15 @@ public class SubarraySumEqualsK {
         return count;
     }
 }
+
+
+/*
+
+Optimized Approach (using HashMap):
+
+
+Time Complexity:
+
+	•	O(n): We traverse the array once, and for each element, checking and updating the hashmap takes constant time.
+	•	Space Complexity: O(n) for storing the cumulative sums in the hashmap.
+*/
