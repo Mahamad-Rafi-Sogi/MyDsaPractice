@@ -7,7 +7,7 @@ public class ValidParentheses {
         String input = "'(',')','{','}','[',']'";
 
         boolean isValid = isValidParentheses(input);
-        System.out.println(isValid);
+        System.out.println("given input is valid: " + isValid);
     }
 
     public static boolean isValidParentheses(String s) {

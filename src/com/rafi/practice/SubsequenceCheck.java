@@ -3,10 +3,10 @@ package com.rafi.practice;
 public class SubsequenceCheck {
 	public static void main(String[] args) {
 	
-	String s1 = "";
-	String s2 = "";
+	String s1 = "asdnkjahbiktgbnoajln";
+	String s2 = "data";  
 	boolean isSubsequence = isSubsequence(s1,s2);
-	System.out.println(isSubsequence);
+	System.out.println(isSubsequence);  // true
 	
 	}
 
