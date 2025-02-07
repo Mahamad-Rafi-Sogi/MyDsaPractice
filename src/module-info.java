@@ -6,4 +6,5 @@
  *
  */
 module ProjectPractice {
+	requires java.desktop;
 }
