@@ -13,13 +13,13 @@ public class StreamExample {
 		
 		list.stream()
 		.filter(n -> n%2 == 0)
-		.forEach(System.out::println);
+		.forEach(n -> System.out.print(n+" "));
 		
 		System.out.println();
 		
 		list.stream()
 		.map(n -> n*n)
-		.forEach(System.out::println);
+		.forEach(n -> System.out.print(n+" "));
 		
 		System.out.println();
 		

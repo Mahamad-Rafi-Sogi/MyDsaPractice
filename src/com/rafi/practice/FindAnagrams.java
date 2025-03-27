@@ -9,9 +9,7 @@ public class FindAnagrams {
 
         // Find strings with anagrams
         List<String> result = Arrays.stream(words)
-                .collect(Collectors.groupingBy(
-                        word -> getSortedString(word), // Group by sorted characters
-                        Collectors.toList()))
+                .collect(Collectors.groupingBy( word -> getSortedString(word), Collectors.toList())) // grouping by sorted character
                 .values().stream()
                 .filter(group -> group.size() > 1) // Keep only groups with more than 1 string
                 .flatMap(List::stream) // Flatten the groups into a single stream
@@ -24,8 +22,7 @@ public class FindAnagrams {
         System.out.println(Arrays.toString(output));
         
         List<String> list2 = Arrays.stream(words)
-        							.collect(Collectors.groupingBy(
-        									word -> getSortedString(word), Collectors.toList()))
+        							.collect(Collectors.groupingBy( word -> getSortedString(word), Collectors.toList() ) )
         							.values().stream()
         							.filter(group -> group.size() > 1)
         							.flatMap(List::stream)
@@ -33,7 +30,6 @@ public class FindAnagrams {
         System.out.println(list2);
         
         List<String> list3 = Arrays.stream(words)
-        							.map(word -> getSortedString(word))
         							.filter(word -> word.length()>3)
         							.collect(Collectors.toList());
         System.out.println(list3);
